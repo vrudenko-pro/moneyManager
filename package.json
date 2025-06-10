@@ -1,0 +1,71 @@
+{
+  "name": "RNProject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "ESLINT_USE_FLAT_CONFIG=true npx eslint . --report-unused-disable-directives --max-warnings 0 && stylelint '**/*.css' --max-warnings 0",
+    "start": "react-native start",
+    "test": "jest",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@firebase/app": "^0.11.5",
+    "@react-native-firebase/app": "^22.1.0",
+    "@react-native-firebase/auth": "^22.1.0",
+    "@react-native-firebase/firestore": "^22.1.0",
+    "@react-navigation/native": "^7.1.6",
+    "@react-navigation/stack": "^7.2.10",
+    "eslint-plugin-prettier": "^5.4.0",
+    "firebase": "^11.6.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "react": "19.0.0",
+    "react-native": "0.79.1",
+    "react-native-date-picker": "^4.4.2",
+    "react-native-gesture-handler": "^2.25.0",
+    "react-native-paper": "^5.14.0",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "^4.10.0",
+    "react-native-select-dropdown": "^4.0.1",
+    "react-native-status-bar-height": "^2.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/runtime": "^7.25.0",
+    "@eslint/js": "^9.26.0",
+    "@react-native-community/cli": "18.0.0",
+    "@react-native-community/cli-platform-android": "18.0.0",
+    "@react-native-community/cli-platform-ios": "18.0.0",
+    "@react-native/babel-preset": "0.79.1",
+    "@react-native/metro-config": "0.79.1",
+    "@react-native/typescript-config": "0.79.1",
+    "@types/jest": "^29.5.13",
+    "@types/react": "^19.0.0",
+    "@types/react-test-renderer": "^19.0.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.8",
+    "globals": "^16.1.0",
+    "husky": "^9.1.7",
+    "jest": "^29.6.3",
+    "lint-staged": "^16.0.0",
+    "prettier": "^3.3.2",
+    "react-test-renderer": "19.0.0",
+    "typescript": "5.0.4",
+    "typescript-eslint": "^8.32.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "overrides": {
+    "eslint": "^9.26.0"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": "npm run lint"
+  }
+}
